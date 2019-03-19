@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布博客</title>
+    <link href="https://lib.baomitu.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/publish.min.css">
+    <link rel="stylesheet" href="../../css/base.min.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="w1000">
+    <div id="publish_blog_box" class="publishBlog">
+        <form id="publish_form"><input type="text" name="image" hidden="hidden"><input type="text" name="classifyName"
+                                                                                       hidden="hidden"><textarea
+                type="text" name="content" hidden="hidden"></textarea><textarea type="text" name="topContent"
+                                                                                hidden="hidden"></textarea>
+            <ul>
+                <li>
+                    <div class="uploadImg"><i class="fa fa-image"></i>图片：<label for="uploadImg"><i
+                            class="fa fa-photo"></i>选择图片</label><input type="file" id="uploadImg"></div>
+                    <div class="classify"><i class="fa  fa-reorder"></i>分类:<span id="classify"></span></div>
+                </li>
+                <li>
+                    <div class="title"><i class="fa fa-bookmark-o"></i>标题：<input type="text" placeholder="请输入博客标题"
+                                                                                 name="title"></div>
+                    <div class="top"><i class="fa fa-hand-pointer-o"></i>置顶:<input type="checkbox" id="top"
+                                                                                   name="special" value="top"><label
+                            for="top" class="top_label"></label><span>已设置为置顶</span></div>
+                </li>
+                <li>
+                    <div class="label"><i class="fa fa-tags"></i>标签:<input type="text" placeholder="多个标签之间用等号分割"
+                                                                           name="labelName"></div>
+                    <div class="private"><i class="fa fa-eye-slash"></i>私密:<input type="checkbox" id="private"
+                                                                                  name="isPrivate" value="Y"><label
+                            for="private" class="private_label"></label><span>已设置为私密文章</span></div>
+                </li>
+                <li>
+                    <div class="admire"><i class="fa fa-thumbs-o-up"></i>赞赏:<input type="text" placeholder="请输入赞赏语"
+                                                                                   name="admire"></div>
+                    <div class="type"><i class="fa fa-user-circle-o"></i>原创:<input type="checkbox" id="type" name="type"
+                                                                                   value="Y"><label for="type"
+                                                                                                    class="type_label"></label><span>已设置为原创</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="admire"><i class="fa fa-lemon-o"></i>开篇:<input type="text" placeholder="请输入开篇四字提示"
+                                                                               name="topDesc"></div>
+                </li>
+            </ul>
+            <div class="article_top">开篇描述：</div>
+            <div class="publish_editor">
+                <div id="top_toolbar" class="toolbar"></div>
+                <div id="top_text" class="top_text"></div>
+            </div>
+            <div class="article_top">文章内容：</div>
+            <div class="publish_editor">
+                <div id="publish_toolbar" class="toolbar"></div>
+                <div id="publish_text" class="publish_text"></div>
+            </div>
+            <span class="commit_message" id="publishBtn">确认提交</span></form>
+    </div>
+</div>
+<div id="footer"></div>
+<div id="fixBars"></div>
+<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/wow/1.0.1/wow.min.js"></script>
+<script src="https://lib.baomitu.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script src="../../js/template/art-template.js"></script>
+<script src="../../js/template.min.js"></script>
+<script src="../../js/editor.js"></script>
+<script src="../../js/base.min.js"></script>
+<script src="../../js/publish.min.js"></script>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+</body>
+</html>

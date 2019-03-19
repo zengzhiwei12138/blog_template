@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <link rel="shortcut icon" href="https://wx3.sinaimg.cn/small/007aGNoFly1fvysv6bn70g305k05k3yy.gif">
+    <title>AZJ~文章列表</title>
+    <link href="https://lib.baomitu.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/base.min.css">
+    <link rel="stylesheet" href="../../css/article.min.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="w1000">
+    <div class="blog_content" id="blog_content"></div>
+    <div class="blog_classify">
+        <ul>
+            <li id="classifyBox" class="wow flipInY mobile_close">
+                <div class="searchBox"><input type="text" placeholder="请输入关键字搜索"/><i class="fa fa-search"></i></div>
+                <span class="classify_title" id="allClassify">全部分类</span>
+                <ul class="classify" id="classify"></ul>
+            </li>
+            <li class="wow fadeInRight mobile_close" name="hot_article"><span class="classify_title">热评文章</span>
+                <ul class="hot_article" id="hot_article"></ul>
+            </li>
+            <li class="wow rotateInDownRight mobile_close" name="top_article"><span class="classify_title">置顶推荐</span>
+                <ul class="hot_article" id="top_article"></ul>
+            </li>
+            <li name="article_label" class="wow fadeInUp mobile_close">
+                <div class="hot_tag"><span class="classify_title">热门标签</span>
+                    <div id="tag_cloud_widget"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div><!--遮罩层-->
+<div id="overLay" hidden="hidden"></div>
+<div><span class="wow fadeInRight left1">&lt;</span><span class="wow fadeInRight left2">&lt;</span><span
+        class="top1 wow fadeInLeft"><i class="fa fa-search"></i></span></div>
+<div id="footer"></div><!--fixBars-->
+<div id="fixBars"></div>
+<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/wow/1.0.1/wow.min.js"></script>
+<script src="https://lib.baomitu.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script src="../../js/template/art-template.js"></script>
+<script src="../../js/template.min.js"></script>
+<script src="../../js/base.min.js"></script>
+<script src="../../js/article.min.js"></script>
+<script src="../../js/tagCloud/tagCloud.min.js"></script>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+</body>
+</html>

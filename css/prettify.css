@@ -1,0 +1,152 @@
+/* ========================
+//#google-prettify-monokai-theme
+//#Version: 0.3
+//#Author: RaphaelDDL
+//#Github: https://github.com/RaphaelDDL/google-prettify-monokai-theme/
+//For use with Google Code Prettify, HTML Syntax only
+//======================== */
+li.L0, li.L1, li.L2, li.L3,li.L4,
+li.L5, li.L6, li.L7, li.L8,li.L9{
+    list-style-type: decimal !important;
+    font-family: consolas, menlo, courier, monospace;
+    font-size: 14px;
+    min-height: 20px;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+li.L0 span, li.L1 span, li.L2 span, li.L3 span,li.L4 span,
+li.L5 span, li.L6 span, li.L7 span, li.L8 span,li.L9 span{
+    font-family: consolas, menlo, courier, monospace;
+    font-size: 14px;
+    line-height: 1.75;
+}
+pre .str, code .str { color: #e6db5a; } /* string */
+pre .kwd, code .kwd { color: #66d9ef; } /* keyword */
+pre .com, code .com { color: #75715e; font-style: italic; } /* comment */
+pre .typ, code .typ { color: #66d9ef; } /* type */
+pre .lit, code .lit { color: #ae81ff; } /* literal */
+pre .pun, code .pun { color: #fff; } /* punctuation */
+pre .pln, code .pln { color: #fff; } /* plaintext */
+pre .tag, code .tag { color: #f92672; } /* html/xml tag */
+pre .atn, code .atn { color: #a6e22a; } /* html/xml attribute name */
+pre .atv, code .atv { color: #e6db74; } /* html/xml attribute value */
+pre .dec, code .dec { color: #ae81ff; } /* decimal */
+
+pre.prettyprint, code.prettyprint {
+    background-color: #272822;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    font-family: consolas, menlo, courier, monospace;
+}
+
+pre.prettyprint {
+    max-width: 100%;
+    margin: 1em auto;
+    padding: 1em;
+    white-space: pre-wrap;
+}
+
+pre.prettyprinted {
+    box-shadow:inset 0 0 1px 2px #3c3d39, 0 0 15px rgba(0,0,0,0.5);
+    border:1px solid #0b0c0a;
+}
+
+
+/* ------------------------
+//Section: class 'linenums' for line numbering
+//------------------------ */
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+    color: #75715e;
+} /* IE indents via margin-left */
+
+
+/* =============================================
+//Section: Print Styles (partially from Sunburn Theme)
+//================================================ */
+@media print {
+    pre.prettyprinted, pre.prettyprint, code.prettyprint {
+        background-color:#fff;
+        color:#000;
+        -moz-border-radius:0;
+        -webkit-border-radius:0;
+        -o-border-radius:0;
+        -ms-border-radius:0;
+        -khtml-border-radius:0;
+        border-radius:0;
+    }
+
+    pre .str, code .str { color: #060; }
+    pre .kwd, code .kwd { color: #006; font-weight: bold; }
+    pre .com, code .com { color: #600; font-style: italic; }
+    pre .typ, code .typ { color: #404; font-weight: bold; }
+    pre .lit, code .lit { color: #044; }
+    pre .pun, code .pun { color: #440; }
+    pre .pln, code .pln { color: #000; }
+    pre .tag, code .tag { color: #006; font-weight: bold; }
+    pre .atn, code .atn { color: #404; }
+    pre .atv, code .atv { color: #060; }
+}
+
+.code-pretty-container {
+    position: relative;
+    padding-top: 9px;
+    margin-bottom: 20px;
+}
+
+.code-pretty-toolbar {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    color: #ddd;
+}
+
+.code-pretty-toolbar .title{
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 14px 2px;
+    margin-right: 12px;
+    line-height: 1.75;
+    background-color: #1E1F1A;
+    border: 1px solid #0b0c0a;
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+    box-shadow: inset 2px 3px 1px 0px #3c3d39, 0 -1px 12px rgba(0,0,0,0.5);
+    font-size: 12px;
+}
+
+.code-pretty-toolbar .tool {
+    margin: -2px 3px 0 0;
+    height: 24px;
+    width: 24px;
+    font-size: 16px;
+    color: #777777;
+}
+
+.code-pretty-toolbar span, .code-pretty-toolbar a {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.code-pretty-text {
+    position: absolute;
+    top: 36px;
+    left: 2px;
+    padding: 4px;
+    color: #FFF;
+    font-family: consolas, menlo, courier, monospace;
+    font-size: 14px;
+    word-break: break-all;
+    line-height: 20px;
+    border: none;
+    overflow: hidden;
+    background-color: rgb(39, 40, 34);
+    resize: none;
+    outline: none;
+}

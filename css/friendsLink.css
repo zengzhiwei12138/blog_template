@@ -1,0 +1,189 @@
+
+
+.link_left {
+    float: left;
+    width: 68%;
+    overflow: hidden;
+}
+
+.link_right {
+    float: right;
+    width: 28%;
+    overflow: hidden;
+}
+
+.link_left > div > h3 {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-left: 3px solid #EE2C2C;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.link_desc p {
+    line-height: 28px;
+    margin-left: 20px;
+    color: #232328;
+    font-size: 12px;
+}
+
+.link_left > div {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.link_desc a {
+    color: #EE2C2C;
+}
+
+.link_desc a:hover {
+    text-decoration: underline;
+}
+
+.link_desc p:last-child {
+    color: #EE2C2C;
+}
+
+.link_desc i:nth-child(n+2) {
+    margin-left: 6px;
+}
+
+.link {
+    float: left;
+    padding: 15px 10px 10px 20px;
+}
+
+.link a {
+    display: block;
+    padding: 12px;
+}
+
+.link_left ul {
+    overflow: hidden;
+}
+
+.link_left ul li {
+    float: left;
+    width: 33.3%;
+    overflow: hidden;
+}
+
+.link_add {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    line-height: 22px;
+    font-size: 13px;
+    color: #EE2C2C;
+    cursor: pointer;
+}
+
+.link_add:hover {
+    text-decoration: underline;
+}
+
+.link_add i {
+    margin-right: 5px;
+}
+
+.add_link_box {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    z-index: 1000;
+    min-height: 290px;
+    min-width: 300px;
+    font-size: 12px;
+    padding: 30px 30px 0 30px;
+    text-align: right;
+    top: calc(50% - 150px);
+    left: calc(50% - 180px);
+}
+
+.add_link_box span {
+    display: table;
+    background: #EE2C2C;
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 7px 28px;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+input[type="text"] {
+    width: 240px;
+    height: 20px;
+    background: #F7F7F9;
+    border: 1px solid #D3D3D7;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black;
+    padding: 6px 8px;
+    outline: none;
+}
+
+.add_link_box i {
+    font-size: 14px;
+    color: #EE2C2C;
+    margin-right: 5px;
+}
+
+.add_link_box p {
+    line-height: 56px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*适配友情连接的手机页面*/
+@media screen and (max-width: 500px) {
+
+    .link_left {
+        width: 100%;
+    }
+
+    .link_right {
+        display: none;
+    }
+
+    .link_left ul li {
+        width: 50%;
+    }
+
+    .link {
+        padding: 5px 0 10px 10px;
+    }
+
+    .link a {
+        padding: 0;
+    }
+
+    .add_link_box {
+        background-color: rgba(255, 255, 255, 1);
+        position: fixed;
+        z-index: 1000;
+        min-height: 290px;
+        width: 90%;
+        font-size: 12px;
+        padding: 30px 30px 0 0;
+        text-align: right;
+        top: calc(50% - 145px);
+        left: calc(5% - 15px);
+    }
+
+    .link_left > div {
+        border-radius: 5px;
+    }
+}

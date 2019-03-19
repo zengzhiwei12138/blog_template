@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AZJ~文章详情</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <link rel="shortcut icon" href="https://wx3.sinaimg.cn/small/007aGNoFly1fvysv6bn70g305k05k3yy.gif">
+    <link rel="stylesheet" href="../../css/base.min.css">
+    <link href="https://lib.baomitu.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/prettify.min.css">
+    <link rel="stylesheet" href="../../css/detail.min.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="w700">
+    <div id="detail" class="wow fadeInUp"></div>
+    <div class="wow fadeInUp detail_comment" data-wow-delay=".5s"><h3>发表评论</h3>
+        <form id="comment_form"><input type="text" name="commentNum" hidden="hidden"><input type="text" name="articleId"
+                                                                                            hidden="hidden"><textarea
+                type="text" name="commentContent" hidden="hidden"></textarea><input type="text" name="commentHeadImage"
+                                                                                    hidden="hidden">
+            <ul>
+                <li><label for="commentHeadImage">头像</label><img
+                        src="https://wx1.sinaimg.cn/square/007aGNoFly1fvys0zjwv7j301o01o0si.jpg" alt="" width="38px"
+                        height="38px" id="commentHeadImage"></li>
+                <li><label for="commentName">昵称（必填）</label><input type="text" name="commentName" id="commentName"></li>
+                <li><label for="commentEmail">邮箱（必填）</label><input type="text" id="commentEmail" name="commentEmail">
+                </li>
+            </ul>
+            <div class="detail_editor">
+                <div id="detail_toolbar" class="toolbar"></div>
+                <div id="detail_text" class="text"></div>
+            </div>
+            <p id="commentMsg"></p>
+            <div class="submit_info"><input type="checkbox" id="email_comment" value="Y" name="emailReply"><label
+                    for="email_comment" class="email_comment"><span>接收回复邮件通知</span></label><span class="commit_comment">确认提交</span>
+            </div>
+        </form>
+    </div>
+    <div class="article_comment">
+        <ul id="commentBox"></ul>
+    </div>
+</div>
+<div class="wow zoomIn headImg" hidden="hidden">
+    <ul>
+        <li><img src="https://wx1.sinaimg.cn/square/007aGNoFly1fvys0zjwv7j301o01o0si.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx4.sinaimg.cn/square/007aGNoFly1fvys1a2hldj30n60piaex.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx3.sinaimg.cn/square/007aGNoFly1fvys19qiw7j305l05kq2r.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx1.sinaimg.cn/square/007aGNoFly1fvys19ekd1j305k05kglj.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx3.sinaimg.cn/square/007aGNoFly1fvys193ccwj306y06ymx2.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx4.sinaimg.cn/square/007aGNoFly1fvys182hc8j305k05kq2t.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx1.sinaimg.cn/square/007aGNoFly1fvys16ku40j305k05ka9v.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx4.sinaimg.cn/square/007aGNoFly1fvys17or1qj305k05kq2w.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx1.sinaimg.cn/square/007aGNoFly1fvys15x834j308c08cdfp.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx2.sinaimg.cn/square/007aGNoFly1fvys14yoczj305k05kt8t.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx2.sinaimg.cn/square/007aGNoFly1fvys14myy2j305k05kt8r.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx3.sinaimg.cn/square/007aGNoFly1fvys14b1tgj30b40b4q37.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx2.sinaimg.cn/square/007aGNoFly1fvys140wp0g308c08caad.gif" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx4.sinaimg.cn/square/007aGNoFly1fvys13m3vej305k05k74s.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx4.sinaimg.cn/square/007aGNoFly1fvys13a439j305k05kq3j.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx3.sinaimg.cn/square/007aGNoFly1fvys11ciurj305k05k0t3.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx1.sinaimg.cn/square/007aGNoFly1fvys111d7tj305k05kmxz.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx3.sinaimg.cn/square/007aGNoFly1fvys10junuj305k05ka9v.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx1.sinaimg.cn/square/007aGNoFly1fvys10a3hvj305k05kaak.jpg" alt="" width="38px"
+                 height="38px"></li>
+        <li><img src="https://wx2.sinaimg.cn/square/007aGNoFly1fvys0zx7tgj305k05kdg4.jpg" alt="" width="38px"
+                 height="38px"></li>
+    </ul>
+    <div class="close"><i class="fa fa-close"></i></div>
+</div>
+<div id="article_menu">
+    <ul></ul>
+</div>
+<div class="article_share">
+    分享
+    <div class="share_item" title="分享到微信">
+        <i class="fa fa-weixin"></i>微信
+    </div>
+    <div class="share_item" title="分享到微博">
+        <i class="fa fa-weibo"></i>微博
+    </div>
+    <div class="share_item" title="分享到qq">
+        <i class="fa fa-qq"></i>QQ
+    </div>
+</div>
+<div id="footer"></div>
+<div id="fixBars"></div>
+<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/wow/1.0.1/wow.min.js"></script>
+<script src="https://lib.baomitu.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script src="https://lib.baomitu.com/clipboard.js/2.0.1/clipboard.js"></script>
+<script src="https://lib.baomitu.com/prettify/r298/prettify.js"></script>
+<script src="https://lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.js"></script>
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="../../js/template/art-template.js"></script>
+<script src="../../js/editor.js"></script>
+<script src="../../js/template.min.js"></script>
+<script src="../../js/base.min.js"></script>
+<script src="../../js/detail.min.js"></script>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+</body>
+</html>

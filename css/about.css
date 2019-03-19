@@ -1,0 +1,75 @@
+.about_left{
+    float: left;
+    width: 68%;
+}
+
+.about_right{
+    float: right;
+    width: 28%;
+}
+
+.about_left h3{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-left: 3px solid #EE2C2C;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.about_left p{
+    line-height: 36px;
+    margin-left: 20px;
+    color: #232328;
+    font-size: 12px;
+}
+
+.about_left>div{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.about_left i{
+    margin-right: 10px;
+}
+
+.about_left a{
+    color: #EE2C2C;
+    margin:0 5px;
+}
+
+.about_left a:hover{
+    text-decoration: underline;
+}
+
+.zzw{
+    cursor: none;
+}
+
+/*关于我页面手机适配*/
+@media screen and (max-width: 500px){
+
+    .about_left{
+        float: none;
+        width: 100%;
+    }
+
+    .about_right{
+        float: none;
+        width: 100%;
+    }
+
+    .about_left>div{
+        border-radius: 5px;
+    }
+
+    .about_me{
+        border-radius: 5px;
+    }
+
+    .weChat{
+        border-radius: 5px;
+    }
+}

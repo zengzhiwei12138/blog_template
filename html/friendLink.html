@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AZJ ~ 友情链接</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <link rel="shortcut icon" href="https://wx3.sinaimg.cn/small/007aGNoFly1fvysv6bn70g305k05k3yy.gif">
+    <link rel="stylesheet" href="../../css/base.min.css">
+    <link rel="stylesheet" href="../../css/friendsLink.min.css">
+    <link href="https://lib.baomitu.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="header"></div>
+<div class="w1000">
+    <div class="link_left">
+        <div class="link_desc"><h3>FriendLink Explain</h3>
+            <p><i class="fa fa-check"></i>原创优先<i class="fa fa-check"></i>技术优先<i class="fa fa-close"></i>经常宕机<i
+                    class="fa fa-close"></i>不合法规<i class="fa fa-close"></i>插边球站<i class="fa fa-close"></i>红标报毒</p>
+            <p>本站信息如下：</p>
+            <p>名称：AZJ</p>
+            <p>网址：<a href="https://www.zzwazj.online">https://www.zzwazj.online</a></p>
+            <p>图标：https://wx3.sinaimg.cn/small/007aGNoFly1fvysv6bn70g305k05k3yy.gif</p>
+            <p>描述：AZJ @ 二人世界</p>
+            <p>注意：本站开放自主填写友情链接权限，如自主添加后，请自觉将本站加为友联，本站会不定时清理违规友联</p></div>
+        <div class="link_content"><h3>Close Friends</h3>
+            <div class="link_add"><i class="fa fa-plus"></i>申请友链</div>
+            <ul id="friend"></ul>
+        </div>
+    </div>
+    <div class="link_right">
+        <div class="about_me"><h2>—— About Me ——</h2><img
+                src="https://wx2.sinaimg.cn/small/007aGNoFly1fvyt8hilmag305k05kjrr.gif" width="100px" height="100px">
+            <div><p>网名：AZJ</p>
+                <p>职业：Java后端攻城狮</p>
+                <p>籍贯：河南-信阳</p>
+                <p>邮箱：876784235@qq.com</p></div>
+        </div>
+        <div class="weChat"><h2>—— WeChat ——</h2><img
+                src="https://wx4.sinaimg.cn/small/007aGNoFly1fvysv6pktaj30e80e8q3v.jpg" alt="个人微信" width="250px"
+                height="250px"></div>
+    </div>
+</div>
+<div class="wow zoomIn add_link_box" hidden="hidden">
+    <form id="link_form"><p><i class="fa fa-circle-o"></i>名称：<input type="text" placeholder="请输入贵站名称" name="linkName">
+    </p>
+        <p><i class="fa fa-address-book"></i>网址：<input type="text" placeholder="请输入贵站网址" name="address"></p>
+        <p><i class="fa fa-image"></i>图标：<input type="text" placeholder="请输入贵站logo地址" name="logo"></p>
+        <p><i class="fa fa-check"></i>描述：<input type="text" placeholder="请输入贵站描述" name="content"/></p><span
+                id="addLink">确认提交</span></form>
+    <div class="close"><i class="fa fa-close"></i></div>
+</div>
+<div id="overLay" hidden="hidden"></div>
+<div id="fixBars"></div>
+<div id="footer"></div>
+<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/wow/1.0.1/wow.min.js"></script>
+<script src="https://lib.baomitu.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script src="../../js/template/art-template.js"></script>
+<script src="../../js/template.min.js"></script>
+<script src="../../js/base.min.js"></script>
+<script src="../../js/friendLink.min.js"></script>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+</body>
+</html>

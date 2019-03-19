@@ -1,0 +1,38 @@
+.single_new {
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.news ul li{
+    margin-bottom: 30px;
+}
+
+.label_title {
+    width: 100%;
+    margin-top: 80px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.label_title h1 {
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: .1em;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(7,17,27,.4);
+}
+
+.label_title p {
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(255,255,255,.8);
+}
+
+.label_title a{
+    color: #EE2C2C;
+}
+
+.w1000{
+    margin-top: 50px;
+}
